@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo clases y Pseudo elementos</title>
+    <style>
+      p {
+        color: salmon;
+        font-size: 70px;
+      }
+      p:hover {
+        /*hacer hover a un parrafo*/
+        color: aquamarine;
+      }
+      div p:nth-child(3) {
+        /*haciendo que el hijo directo 3 de la etiqueta p asuma estos estilos*/
+        color: black;
+        font-size: 20px;
+      }
+      p::first-letter {
+        /*pseudoelemento que coloca la primera letra del parrafo en rojo*/
+        color: red;
+        font-size: 40px;
+      }
+      p::before {
+        /*agregar un contenido antes del parrafo*/
+        content: "👌";
+      }
+      p::after {
+        /*agregar un contenido despues del parrafo*/
+        content: "👍";
+      }
+      ::placeholder {
+        /*cambia el color del placeholder*/
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hola</p>
+    <div>
+      <p>Platzi</p>
+      <p>Master</p>
+      <p>Lo mejor</p>
+    </div>
+    <input type="text" placeholder="Name" />
+  </body>
+</html>

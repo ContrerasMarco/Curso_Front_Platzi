@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox y Css Grip</title>
+    <style>
+      .container {
+        display: flex;
+        background: papayawhip;
+        height: 500px; /*Se le da un alto al contenedor principal para poder centrar los contenedores hijos*/
+        justify-content: space-between; /*se coloca un espacio entre los contenedores para que peudan estar separados*/
+        justify-content: center; /*Se alinean los contenedores al centro del contenedor principal*/
+        align-items: center; /*Se alinean los item de manera central y verticalmente respecto al contenedor principal*/
+        /*flex-direction: column;*/ /*Hacemos que la direccion de los contenedores hijos sea de tipo columna y no de filas como es por defecto*/
+      }
+      .item {
+        width: 30px;
+        height: 30px;
+        background: blue;
+      }
+      .container .item:nth-child(2n-1) {
+        /* se le indica a los hijos impares que tome el color rojo para poder diferenciarlos*/
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
