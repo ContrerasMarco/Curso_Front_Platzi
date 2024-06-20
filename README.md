@@ -14,3 +14,4 @@ Lo que voy aprendiendo.Lo que voy aprendiendo.
 - selectores_combinados
 - tiposDisplay (Inline/ inline block)
 - Entendiendo el modelo de caja.
+- Colapso de imagenes
