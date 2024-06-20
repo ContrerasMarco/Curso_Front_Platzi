@@ -13,3 +13,4 @@ Lo que voy aprendiendo.Lo que voy aprendiendo.
 - selectores
 - selectores_combinados
 - tiposDisplay (Inline/ inline block)
+- Entendiendo el modelo de caja.
