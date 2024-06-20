@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo de Caja</title>
+    <style>
+      .container {
+        /*contenedor principal*/
+        background: black;
+        width: 300px; /* al contenedor le indicamos el tamaño tanto de ancho y altura*/
+        height: 300px;
+        color: white;
+        align-items: center; /* alineo el item de manera central*/
+        justify-content: center; /* se alinea el contenido de manera central*/
+        display: flex; /*le indico que uso flex*/
+        box-sizing: border-box; /* aplico esta propiedad para que no se sumen el padding, el margin y el border al contenedor*/
+        padding: 10px;
+        margin: 10px;
+        border: 5px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">Platzi</div>
+  </body>
+</html>
