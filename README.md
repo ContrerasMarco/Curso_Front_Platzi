@@ -15,3 +15,5 @@ Lo que voy aprendiendo.Lo que voy aprendiendo.
 - tiposDisplay (Inline/ inline block)
 - Entendiendo el modelo de caja.
 - Colapso de imagenes
+- Position relative, absolute, mas sus propiedades (bottom,top,left,right) y position sticky, static.
+- Entendiendo z-index

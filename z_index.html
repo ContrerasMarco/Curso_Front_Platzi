@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entendiendo z-index</title>
+    <style>
+      /*en este ejercicio de z-index creamos un contenedor principal y luego 3 contenedores para hacer las pruebas, el orden de apilamiento original
+      es el contenedor principal en color amarillo y luego el apilamiento de tres contenedores, rojo, azul y naranjo, el apilamiento es hacia el usuario es decir
+      el ultimo contenedor es el primero que el usuario ve y el primer contenedor es el ultimo que se ve en la pantalla cubierto por los otros contenedores.
+      el ejercicio es dejar el primer contenedor en el flujo html que se vea de los primeros y el ultimo contenedor en el flujo html en este caso el naranjo se vea
+      por detras de los demas contenedores*/
+      .container {
+        /*contenedor principal que le indicamos tenga la propiedad relative*/
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        position: relative;
+      }
+      .red {
+        /*contenedor hijo con propiedad absolute, y le indicamos su z-index*/
+        width: 190px;
+        height: 190px;
+        background-color: red;
+        position: absolute;
+        z-index: 4;
+      }
+      .blue {
+        /*contenedor hijo con propiedad absolute, y le indicamos su z-index*/
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        position: absolute;
+        z-index: 3;
+      }
+      .orange {
+        /*contenedor hijo con propiedad absolute, y le indicamos su z-index*/
+        width: 210px;
+        height: 210px;
+        background-color: orange;
+        position: absolute;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="red"></div>
+      <div class="blue"></div>
+      <div class="orange"></div>
+    </div>
+  </body>
+</html>
