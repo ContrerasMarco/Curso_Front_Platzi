@@ -6,10 +6,10 @@
     <title>Posicionamiento</title>
     <style>
       .container {
-        width: 200px;
+        width: 200px; /*le damos ancho y con height el alto al contenedor*/
         height: 200px;
         background: peachpuff;
-        position: relative;
+        position: relative; /* le decimos al contenedor que tenga una position relative y cualquier contenedor hijo que sea absolute se pegara a este contenedor*/
         top: 0px;
       }
       .item {
@@ -17,6 +17,7 @@
         height: 20px;
         background: hotpink;
         position: absolute;
+        /* le decimos al contenedor hijo que tenga una position absolute, para poder usar las propiedades y poder interactuar con el contenedor padre*/
         right: 20px;
         bottom: 20px;
       }
@@ -24,11 +25,12 @@
         width: 100%;
         height: 60px;
         background: LightCyan;
-        position: fixed;
+        position: fixed; /* le decimos al contenedor que se mantenga en una positio fija con la propiedad fixed*/
         top: 0;
       }
       ul p {
         position: sticky;
+        /*a este contenedor le decimos que use la propiedad sticky, para que en este caso un parrafo se mantenga unido al contenedor padre hasta que desaparezca el contenido de este*/
         top: 0;
       }
     </style>
