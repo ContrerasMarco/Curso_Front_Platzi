@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propiedades y valores usados en CSS</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+      }
+      .card {
+        background: paleturquoise;
+        border-radius: 20px;
+        overflow: hidden;
+        width: 250px;
+        height: 250px;
+        border: 1px solid black;
+        box-shadow: 5px 5px gray;
+      }
+      .container :hover {
+        transform: scale(1.1);
+      }
+      .card img {
+        width: 100%;
+      }
+      .card :nth-child(2) {
+        font-size: 13px;
+        text-align: center;
+        color: rgb(30, 40, 168);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvR7MU1OvoWcF_XGuE-vGFiUNhmKHD8nQYPg&s"
+          alt="nasa_logo"
+        />
+        <p>
+          es la agencia del gobierno estadounidense responsable del programa
+          espacial civil, así como de las investigaciones aeronáutica y
+          aeroespacial
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
