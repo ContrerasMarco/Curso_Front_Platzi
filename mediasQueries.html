@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entendiendo medias queries</title>
+    <style>
+      div {
+        background: blue;
+        width: 200px;
+        height: 200px;
+        color: azure;
+      }
+      @media (max-width: 300px) {
+        div {
+          background: red;
+          color: black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      @media (min-width: 550px) {
+        div {
+          background: black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>Platzi</div>
+  </body>
+</html>
