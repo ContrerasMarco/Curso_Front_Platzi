@@ -17,3 +17,4 @@ Lo que voy aprendiendo.Lo que voy aprendiendo.
 - Colapso de imagenes
 - Position relative, absolute, mas sus propiedades (bottom,top,left,right) y position sticky, static.
 - Entendiendo z-index
+- Medias queries.
